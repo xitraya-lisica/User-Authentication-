@@ -24,6 +24,8 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
+
+
 // Register a new user
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
