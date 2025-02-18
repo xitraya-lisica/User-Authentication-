@@ -14,8 +14,6 @@ const generateToken = (user) => {
   return jwt.sign({ id: user.id, username: user.username }, secretKey, { expiresIn: '1h' });
 };
 
-
-
 const authenticateToken = (req, res, next) => {
   const token = req.header('Authorization')?.split(' ')[1];
   if (!token) return res.status(403).send('Access denied');
