@@ -7,8 +7,6 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-
-
 const users = [];
 const secretKey = 'your_secret_key';
 
